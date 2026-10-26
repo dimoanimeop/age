@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="app">
+        <div class="calculator-card">
+
+            <div class="icon">🎂</div>
+
+            <h1>Age Calculator</h1>
+            <p class="subtitle">
+                Discover exactly how old you are.
+            </p>
+
+            <form id="ageForm">
+                <label for="birthDate">Enter your date of birth</label>
+
+                <input
+                    type="date"
+                    id="birthDate"
+                    name="birthDate"
+                    required
+                >
+
+                <button type="submit">
+                    Calculate My Age
+                </button>
+            </form>
+
+            <section id="result" class="result" hidden>
+                <h2>Your Age</h2>
+
+                <div class="age-details">
+                    <div class="age-box">
+                        <span id="years">0</span>
+                        <small>Years</small>
+                    </div>
+
+                    <div class="age-box">
+                        <span id="months">0</span>
+                        <small>Months</small>
+                    </div>
+
+                    <div class="age-box">
+                        <span id="days">0</span>
+                        <small>Days</small>
+                    </div>
+                </div>
+
+                <p id="nextBirthday"></p>
+            </section>
+
+            <p id="error" class="error" hidden></p>
+
+            <footer>
+                Made with ❤️
+            </footer>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
